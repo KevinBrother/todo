@@ -14,9 +14,6 @@ export default function Layout() {
         <li>
           <Link to="/test/tailwind">test/tailwind</Link>
         </li>
-        <li>
-          <a href="https://github.com/umijs/umi">Github</a>
-        </li>
       </ul>
       <Outlet />
     </div>
