@@ -1,4 +1,4 @@
-// import mockjs from 'mockjs';
+import mockjs from 'mockjs';
 
 export default {
   '/api/todo-list': [
@@ -8,7 +8,7 @@ export default {
 
   '/api/dodo-detail/1': { type: 'todo', label: 'first' },
 
-  // 'GET /api/tags': mockjs.mock({
-  //   'list|100': [{ name: '@city', 'value|1-100': 50, 'type|0-2': 1 }],
-  // }),
+  'GET /api/tags': mockjs.mock({
+    'list|100': [{ name: '@city', 'value|1-100': 50, 'type|0-2': 1 }],
+  }),
 };

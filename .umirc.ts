@@ -21,8 +21,15 @@ export default defineConfig({
       name: 'tailwind 测试',
       component: 'tests/tailwind',
     },
-    { path: '/todo/pages/task-detail', component: 'todo/pages/task-detail' },
-    { path: '/todo/pages/task-list', component: 'todo/pages/task-list' },
+    {
+      path: '/todo/pages/task-detail',
+      component: 'todo/pages/task-detail',
+    },
+    {
+      path: '/todo/pages/task-list',
+      name: 'todo-list',
+      component: 'todo/pages/task-list',
+    },
   ],
   npmClient: 'pnpm',
   tailwindcss: {},
