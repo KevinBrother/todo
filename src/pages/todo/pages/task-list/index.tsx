@@ -6,7 +6,7 @@ import { IItemProps } from '../../components/item';
 export default function Page() {
   const [data] = useState<IItemProps[]>([
     {type: 'todo', label: 'first'},
-    {type: 'add', label: 'second'}
+    { type: 'add', label: 'second'}
   ])
   return (
     <div>
