@@ -2,30 +2,31 @@
   "private": true,
   "author": "caojunjie <1301239018@qq.com>",
   "scripts": {
-    "dev": "umi dev",
-    "build": "umi build",
-    "postinstall": "umi setup",
-    "setup": "umi setup",
-    "lint": "umi lint",
-    "lint:fix": "umi lint --fix",
-    "start": "npm run dev"
+    "dev": "max dev",
+    "build": "max build",
+    "format": "prettier --cache --write .",
+    "prepare": "husky install",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev",
+    "lint:fix": "umi lint --fix"
   },
   "dependencies": {
-    "umi": "^4.1.0"
+    "@ant-design/icons": "^5.2.6",
+    "@ant-design/pro-components": "^2.6.46",
+    "@umijs/max": "^4.1.0",
+    "antd": "^5.13.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
-    "@umijs/lint": "^4.1.0",
-    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
-    "stylelint": "^16.1.0",
-    "typescript": "^5.3.3",
     "prettier": "^3.2.2",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-packagejson": "^2.4.9",
-    "@umijs/plugins": "^4.1.0",
-    "tailwindcss": "^3"
+    "tailwindcss": "^3",
+    "typescript": "^5.3.3"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,less}": [
