@@ -3,7 +3,7 @@ import styles from './index.less';
 export default function Page() {
   return (
     <div>
-      <h1 className={styles.title}>Page list</h1>
+      <h1 className={styles.title}>task detail</h1>
     </div>
   );
 }

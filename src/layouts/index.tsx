@@ -14,6 +14,12 @@ export default function Layout() {
         <li>
           <Link to="/test/tailwind">test/tailwind</Link>
         </li>
+        <li>
+          <Link to="/todo/pages/task-detail">/todo/pages/task-detail</Link>
+        </li>
+        <li>
+          <Link to="/todo/pages/task-list">/todo/pages/task-list</Link>
+        </li>
       </ul>
       <Outlet />
     </div>

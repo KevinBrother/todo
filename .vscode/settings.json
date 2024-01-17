@@ -26,6 +26,9 @@
     "[markdown]": {
       "editor.formatOnSave": false
     },
+    "[javascript]": {
+      "editor.formatOnSave": false
+    },
     "[json]": {
       "editor.formatOnSave": false
     },
