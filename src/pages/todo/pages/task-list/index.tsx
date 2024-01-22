@@ -1,31 +1,32 @@
+import services from '@/services';
 import { useEffect, useState } from 'react';
-import styles from './index.less';
 import { Item } from '../../components';
 import { IItemProps } from '../../components/item';
-import services from '@/services'
-const { getTodoList}  = services.TodoController;
-export default function Page() {
+import styles from './index.less';
 
-  const [data, setData] = useState<IItemProps[]>([
-    {type: 'todo', label: 'first'},
-    { type: 'add', label: 'second'}
-  ])
+const { getTodoList } = services.TodoController;
+
+export default function Page() {
+  const [data, setData] = useState<IItemProps[]>([]);
 
   useEffect(() => {
-    getTodoList().then(rst => {
-      console.log('rst', rst)
+    getTodoList().then((rst) => {
+      console.log('rst', rst);
       setData(rst);
-    })
-  }, [])
+    });
+  }, []);
 
   return (
-    <div>
+    <div className="text-xs h-[500px] border ">
       <h1 className={styles.title}>task list</h1>
-      {
-        data.map((item, index) => {
-          return <Item key={index} {...item}/>
-        })
-      }
+      <div className="flex flex-col gap-4 fl overflow-y-auto h-full">
+        {data.map((item, index) => {
+          return <Item key={index} {...item} />;
+        })}
+      </div>
+      <div className="">
+        <Item type="add" />
+      </div>
     </div>
   );
 }

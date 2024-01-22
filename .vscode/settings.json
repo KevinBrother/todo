@@ -46,6 +46,13 @@
       "mockjs",
       "tailwindcss",
       "umijs"
-    ]
+    ],
+    "tailwindCSS.includeLanguages": {
+      "javascript": "javascript",
+      "html": "HTML"
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    }
   }
   

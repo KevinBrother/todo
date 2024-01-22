@@ -1,15 +1,21 @@
-import React from 'react';
-import styles from './index.less';
-
+import classNames from 'classnames';
+import { CSSProperties } from 'react';
 export interface IItemProps {
-  type: 'add' | 'todo',
-  label?: string
+  type: 'add' | 'todo';
+  className?: string;
+  style?: CSSProperties;
+  label?: string;
+  border?: boolean;
 }
 export function Item(props: IItemProps) {
-  const {type,label} = props;
+  const { type, label, border = true } = props;
   return (
-    <div>
-      <h1 className={styles.title}>Page list {type} : {label}</h1>
+    <div
+      className={classNames('h-7 px-2 py-1.5', {
+        'border-[1px] rounded': border,
+      })}
+    >
+      Page list {type} : {label}
     </div>
   );
 }

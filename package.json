@@ -16,7 +16,8 @@
     "@ant-design/icons": "^5.2.6",
     "@ant-design/pro-components": "^2.6.46",
     "@umijs/max": "^4.1.0",
-    "antd": "^5.13.1"
+    "antd": "^5.13.1",
+    "classnames": "^2.5.1"
   },
   "devDependencies": {
     "@types/mockjs": "^1.0.10",
