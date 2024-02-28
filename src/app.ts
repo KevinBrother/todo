@@ -14,5 +14,10 @@ export const layout: RunTimeLayoutConfig = () => {
     menu: {
       locale: false,
     },
+    classNames: 'good121212',
+    // style: {
+    //   color: 'red',
+    //   backgroundColor: 'blue',
+    // },
   };
 };

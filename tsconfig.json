@@ -1,3 +1,6 @@
 {
+  "compilerOptions": {
+    "types": ["./global.d.ts"]
+  },
   "extends": "./src/.umi/tsconfig.json"
 }

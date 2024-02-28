@@ -17,7 +17,11 @@
     "@ant-design/pro-components": "^2.6.46",
     "@umijs/max": "^4.1.0",
     "antd": "^5.13.1",
-    "classnames": "^2.5.1"
+    "antd-mobile": "^5.34.0",
+    "antd-mobile-icons": "^0.3.0",
+    "classnames": "^2.5.1",
+    "mobx": "^6.12.0",
+    "mobx-react-lite": "^4.0.5"
   },
   "devDependencies": {
     "@types/mockjs": "^1.0.10",
