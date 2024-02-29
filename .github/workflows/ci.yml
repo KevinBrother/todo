@@ -13,11 +13,11 @@ jobs:
           persist-credentials: false
       - name: Install and Build
         run: |
-          npm install
-          npm run-script build
+          pnpm i
+          pnpm  build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: main
-          FOLDER: build
+          FOLDER: dist
