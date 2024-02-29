@@ -10,20 +10,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v2
       
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          cache: pnpm
+      # - name: Install Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     cache: pnpm
 
-      - name: Install dependencies
-        run: pnpm install
+      # - name: Install dependencies
+      #   run: pnpm install
 
-      - name: Build
-        run: pnpm build
+      # - name: Build
+      #   run: pnpm build
 
+      - name: Install And Build
+        run: 
+          npm install
+          npm run-script build
+        
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
